@@ -18,6 +18,7 @@ def LoadArrivals(filename):
     aircrafts = []
 
     #comprovem si el fitxer existeix, si no, tornem una llista buida
+    #Hem canviat el "not os.path" per un if normal. Si existeix, entra. Si no, salta al final.
     if os.path.isfile(filename):
 
         f = open(filename, 'r', encoding='utf-8') #obre l'arxiu
@@ -27,8 +28,7 @@ def LoadArrivals(filename):
         #bucle per recórrer les línies
         i = 0
         while i < len(lines):
-            line = lines[
-                i].strip()  #aqui utilitzem el .strip, una eina molt útil per eliminar els salts de línia, és a dir, elimina la terminologia que té el compilador (suposo) per determinar el salt de línia, per tal que no s'agafi aquesta terminologia com a dada.
+            line = lines[i].strip()  #aqui utilitzem el .strip, una eina molt útil per eliminar els salts de línia, és a dir, elimina la terminologia que té el compilador (suposo) per determinar el salt de línia, per tal que no s'agafi aquesta terminologia com a dada.
 
             #validem que les linies no estiguin buides ni siguin la capçalera de l'arxiu arrivals
             if len(line) > 0:
@@ -99,14 +99,15 @@ def PlotArrivals(aircrafts):
 
             i = i + 1
 
-        #endrecem les hores de la més petita a la més gran (00, 01, 02...), si no fessim això, al gràfic sortiran les hores barrejades tal com les anem llegint del fitxer de text
+        #endrecem les hores de la més petita a la més gran (00, 01, 02...)
+        #si no fessim això, al gràfic sortiran les hores barrejades tal com les anem llegint del fitxer de text
         n = len(hores)
         x = 0
         while x < n - 1:
             y = 0
             while y < n - x - 1:
                 if int(hores[y]) > int(hores[y + 1]):
-                    #això serivrà per moure l'hora de posició
+                    #Això serivrà per moure l'hora de posició
                     temp_h = hores[y]
                     hores[y] = hores[y + 1]
                     hores[y + 1] = temp_h
@@ -300,6 +301,7 @@ def PlotAirlines(aircrafts):
 
             i = i + 1
 
+        # dibuixem el gràfic de barres clàssic
         plt.figure(figsize=(12, 6))
         plt.bar(cies_uniques, recompte, color='coral')
         plt.xticks(rotation=90)
@@ -321,7 +323,7 @@ def MapFlights(aircrafts, airports_list=None, filename="mapa_vols.kml"):
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         f.write('<kml xmlns="http://www.opengis.net/kml/2.2">\n<Document>\n')
 
-        #color verd per Schengen i vermell per no Schengen
+        #color verd per Schengen i vermell o blau per no Schengen
         f.write('<Style id="schLine"><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>\n')
         f.write('<Style id="nonschLine"><LineStyle><color>ff0000ff</color><width>2</width></LineStyle></Style>\n')
 
@@ -342,6 +344,7 @@ def MapFlights(aircrafts, airports_list=None, filename="mapa_vols.kml"):
 
             #sii hem trobat l'aeroport, posem la línia al mapa
             if trobat == True and ap_origen is not None:
+                #Llegim l'atribut directament, de forma universal!
                 es_schengen = ap_origen.Schengen
                 if es_schengen == True:
                     style = "#schLine"
