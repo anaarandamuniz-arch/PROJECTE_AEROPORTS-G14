@@ -43,20 +43,3 @@ if __name__ == "__main__":
         print("No s'ha creat fitxer Schengen (llista buida o sense Schengen)")
 
 
-from airport import crear_fitxer_examen
-
-
-crear_fitxer_examen()
-
-
-f = open("examen.txt", "r")
-linies = f.readlines()
-
-if len(linies) == 0:
-    print("No s'ha trobat cap aeroport que compleixi les condicions.")
-else:
-    cnt = 0
-    while cnt < len(linies):
-        print("Trobat: " + linies[cnt].strip())
-        cnt = cnt + 1
-f.close()
