@@ -7,10 +7,10 @@ import subprocess
 
 from airport import LoadAirports, SetSchengen, PlotAirports, MapAirports, AddAirport, RemoveAirport, Airport, \
     PrintAirport
-# importem tot el necessari de aircraft.py (versió 2)
+#importem tot el necessari de aircraft.py (versió 2)
 from aircraft import LoadArrivals, PlotArrivals, SaveFlights, PlotAirlines, PlotFlightsType, MapFlights, \
     LongDistanceArrivals
-# importem tot el necessari de LEBL.py (versió 3)
+#importem tot el necessari de LEBL.py (versió 3)
 from LEBL import LoadAirportStructure, AssignGate, GateOccupancy
 
 
@@ -28,7 +28,7 @@ class InterficieAeroports:
 
         self.aeroports = []
         self.vols = []
-        self.bcn = None  # Variable per a l'estructura de LEBL
+        self.bcn = None  #variable per a l'estructura de LEBL
 
         self.notebook = ttk.Notebook(root)
         self.notebook.pack(fill="both", expand=True, padx=15, pady=15)
@@ -47,12 +47,12 @@ class InterficieAeroports:
         self._construir_pestanya_vols()
         self._construir_pestanya_portes()
 
-    # PESTANYA 1: AEROPORTS
+    #PESTANYA 1: AEROPORTS
     def _construir_pestanya_aeroports(self):
         frame_top = tk.Frame(self.tab_aeroports, bg="#FFFFFF")
         frame_top.pack(padx=10, pady=20)
 
-        # afegim l'estètica
+        #afegim l'estètica
         tk.Button(frame_top, text="Carregar aeroports", width=20, bg="#0078D7", fg="white",
                   font=("Helvetica", 10, "bold"), relief="flat", cursor="hand2", command=self.carregar).grid(row=0,
                                                                                                              column=0,
@@ -72,7 +72,7 @@ class InterficieAeroports:
 
     def carregar(self):
         nom = filedialog.askopenfilename(
-            title="Selecciona fitxer d'aeroports")  # obrirà el buscador d'arxius per tal que li introduim el fitxer d'aeroports
+            title="Selecciona fitxer d'aeroports")  #obrirà el buscador d'arxius per tal que li introduim el fitxer d'aeroports
         if not nom: return
         self.aeroports = LoadAirports(nom)
         for a in self.aeroports: SetSchengen(a)
@@ -81,11 +81,11 @@ class InterficieAeroports:
     def mostrar_grafic(self):
         missatge_error = ""
 
-        # comprovem si hi ha aeroports
+        #comprovem si hi ha aeroports
         if len(self.aeroports) == 0:
             missatge_error = missatge_error + "No hi ha aeroports carregats. "
 
-        # si la caixa d'errors que hem definit té text, ho mostrem i parem
+        #si la caixa d'errors que hem definit té text, ho mostrem i parem
         if len(missatge_error) > 0:
             self.label_estat_ap.config(text="ERROR: " + missatge_error, fg="red")
             return
@@ -95,7 +95,7 @@ class InterficieAeroports:
 
     def _obrir_kml(self, nom_fitxer):
         try:
-            # agafem la ruta completa del fitxer
+            #agafem la ruta completa del fitxer
             ruta_absoluta = os.path.abspath(nom_fitxer)
             sistema = platform.system()
 
@@ -123,12 +123,12 @@ class InterficieAeroports:
         self._obrir_kml(nom_arxiu)
         self.label_estat_ap.config(text="Mapa generat i obert a Google Earth.", fg="black")
 
-    # PESTANYA 2: VOLS (VERSIÓ 2):
+    #PESTANYA 2: VOLS (VERSIÓ 2):
     def _construir_pestanya_vols(self):
         frame_controls = tk.Frame(self.tab_vols, bg="#FFFFFF")
         frame_controls.pack(padx=10, pady=20)
 
-        # botons d'accions principals
+        #botons d'accions principals
         tk.Button(frame_controls, text="Load Arrivals", width=20, bg="#0078D7", fg="white",
                   font=("Helvetica", 10, "bold"), relief="flat", cursor="hand2", command=self.carregar_vols).grid(row=0,
                                                                                                                   column=0,
@@ -140,7 +140,7 @@ class InterficieAeroports:
                                                                                                                  padx=8,
                                                                                                                  pady=8)
 
-        # botons de gràfics
+        #botons de gràfics
         tk.Button(frame_controls, text="Plot Arrivals (Hours)", width=20, bg="#0078D7", fg="white",
                   font=("Helvetica", 10, "bold"), relief="flat", cursor="hand2", command=self.grafic_hores).grid(row=1,
                                                                                                                  column=0,
@@ -153,7 +153,7 @@ class InterficieAeroports:
                   font=("Helvetica", 10, "bold"), relief="flat", cursor="hand2", command=self.grafic_schengen).grid(
             row=1, column=2, padx=8, pady=8)
 
-        # botons de Google Earth
+        #botons de Google Earth
         tk.Button(frame_controls, text="Map Trajectories", width=20, bg="#0078D7", fg="white",
                   font=("Helvetica", 10, "bold"), relief="flat", cursor="hand2", command=self.mapa_vols).grid(row=2,
                                                                                                               column=0,
@@ -171,7 +171,6 @@ class InterficieAeroports:
         nom = filedialog.askopenfilename(title="Selecciona fitxer Arrivals.txt")
         if not nom: return
         self.vols = LoadArrivals(nom)
-        # S'HA ELIMINAT EL POPUP (MESSAGEBOX) QUE MOLESTAVA. ARA NOMÉS S'ACTUALITZA L'ETIQUETA.
         self.label_estat_vols.config(text=f"Carregats {len(self.vols)} vols", fg="black")
 
     def guardar_vols(self):
@@ -186,7 +185,7 @@ class InterficieAeroports:
 
         nom = filedialog.asksaveasfilename(defaultextension=".txt")
         if not nom:
-            return  # si l'usuari tanca la finestra de guardar sense posar nom, no fem res
+            return  #si l'usuari tanca la finestra de guardar sense posar nom, no fem res
 
         SaveFlights(self.vols, nom)
         self.label_estat_vols.config(text="Vols desats correctament al fitxer.", fg="green")
@@ -216,26 +215,26 @@ class InterficieAeroports:
         self.label_estat_vols.config(text="Gràfic d'aerolínies mostrat correctament.", fg="black")
 
     def grafic_schengen(self):
-        # creem una "caixa" buida per anar guardant els errors que trobem
+        #creem una "caixa" buida per anar guardant els errors que trobem
         missatge_error = ""
 
-        # conprovem els aeroports. Si falten, afegim l'avís a la caixa
+        #conprovem els aeroports. Si falten, afegim l'avís a la caixa
         if len(self.aeroports) == 0:
             missatge_error = missatge_error + "Falten els aeroports. "
 
-        # ara comprovem els vols. Si falten, afegim l'avís a la mateixa caixa
+        #ara comprovem els vols. Si falten, afegim l'avís a la mateixa caixa
         if len(self.vols) == 0:
             missatge_error = missatge_error + "Falten els vols. "
 
-        # ara fem que es representin els errors
+        #ara fem que es representen els errors
         if len(missatge_error) > 0:
-            # si hi ha algun error (un o tots dos), ho mostrem tot junt i aturem la funció
+            #si hi ha algun error (un o tots dos), ho mostrem tot junt i aturem la funció
             self.label_estat_vols.config(text="ERROR: " + missatge_error, fg="red")
             return
 
         PlotFlightsType(self.vols, self.aeroports)
 
-        # tornem a posar el text normal avisant que tot ha anat bé si no hi ha errors
+        #tornem a posar el text normal avisant que tot ha anat bé si no hi ha errors
         self.label_estat_vols.config(text="Gràfic generat correctament.", fg="black")
 
     def mapa_vols(self):
@@ -267,7 +266,7 @@ class InterficieAeroports:
             self.label_estat_vols.config(text="ERROR: " + missatge_error, fg="red")
             return
 
-        # busquem els vols llargs
+        #busquem els vols llargs
         vols_llargs = LongDistanceArrivals(self.vols, self.aeroports)
         if len(vols_llargs) == 0:
             self.label_estat_vols.config(text="No s'han trobat vols a més de 2000km.", fg="blue")
@@ -278,11 +277,13 @@ class InterficieAeroports:
         self._obrir_kml(nom_arxiu)
         self.label_estat_vols.config(text="Mapa de llarga distància obert a Google Earth.", fg="black")
 
-    # PESTANYA 3 (V3): GESTIÓ DE PORTES
+    #PESTANYA 3 (V3): GESTIÓ DE PORTES
     def _construir_pestanya_portes(self):
+        #creem un marc per posar els botons de la versio 3
         frame_controls = tk.Frame(self.tab_portes, bg="#FFFFFF")
         frame_controls.pack(padx=10, pady=20)
 
+        #botons principals de la pestanya
         tk.Button(frame_controls, text="Construir Estructura LEBL", width=25, bg="#0078D7", fg="white",
                   font=("Helvetica", 10, "bold"), relief="flat", cursor="hand2", command=self.carregar_estructura).grid(
             row=0, column=0, padx=8, pady=8)
@@ -295,40 +296,51 @@ class InterficieAeroports:
                   font=("Helvetica", 10, "bold"), relief="flat", cursor="hand2", command=self.mostrar_ocupacio).grid(
             row=0, column=2, padx=8, pady=8)
 
+        #etiqueta per avisar a l'usuari de com funciona tot aixo
         self.label_estat_portes = tk.Label(self.tab_portes, text="Recorda carregar primer Airports i Arrivals.",
                                            bg="#FFFFFF", font=("Helvetica", 10))
         self.label_estat_portes.pack(pady=5)
 
+        #caixa de text gran on ensenyarem totes les portes
         self.text_ocupacio = tk.Text(self.tab_portes, height=12, width=70, bg="#F0F4F8", font=("Courier", 10))
         self.text_ocupacio.pack(pady=10)
 
     def carregar_estructura(self):
+        #obrim el buscador d'arxius per triar el text de les terminals
         nom = filedialog.askopenfilename(title="Selecciona el fitxer de l'aeroport (ex: Terminals.txt)")
         if not nom: return
         self.bcn = LoadAirportStructure(nom)
+
+        #si s'ha creat be l'aeroport ho diem en verd, sino tirem error en vermell
         if self.bcn is not None:
             self.label_estat_portes.config(text=f"Estructura de l'aeroport {self.bcn.code} construïda amb èxit.",
                                            fg="green")
         else:
-            self.label_estat_portes.config(text="ERROR: No s'ha pogut llegir el fitxer de l'estructura.", fg="red")
+            self.label_estat_portes.config(text="ERROR: No s'ha pogut leer el fitxer de l'estructura.", fg="red")
 
     def assignar_portes(self):
+        #creem la caixa d'errors buida com feiem abans
         missatge_error = ""
 
+        #conprovem que l'usuari hagi carregat tot el que necessitem abans de donarli al boto
         if self.bcn is None:
             missatge_error = missatge_error + "Has de carregar primer l'estructura LEBL. "
         if len(self.vols) == 0:
             missatge_error = missatge_error + "Falten els vols (Pestanya 2). "
 
+        #si hi ha errors els ensenyem i parem el codi per no petar
         if len(missatge_error) > 0:
             self.label_estat_portes.config(text="ERROR: " + missatge_error, fg="red")
             return
 
+        # variables per comptar els que aparquem be i els que fallen
         assignats_ok = 0
         assignats_error = 0
 
+        #bucle per intentar aparcar tots els avions de la llista
         i = 0
         while i < len(self.vols):
+            # cridem la funcio mestra del LEBL.py
             res = AssignGate(self.bcn, self.vols[i])
             if res == 0:
                 assignats_ok = assignats_ok + 1
@@ -341,14 +353,19 @@ class InterficieAeroports:
             fg="black")
 
     def mostrar_ocupacio(self):
+        #primer mirem que tinguem l'aeroport a la memoria
         if self.bcn is None:
             self.label_estat_portes.config(text="ERROR: Estructura no carregada.", fg="red")
             return
 
+        #cridem la funcio que ens fa la llista d'ocupacio
         ocupacio = GateOccupancy(self.bcn)
+
+        #netejem la caixa de text sencera per no barrejar llistes velles si cliquem dos cops
         self.text_ocupacio.delete('1.0', tk.END)
         self.text_ocupacio.insert(tk.END, f"--- REPORTE D'OCUPACIÓ DE PORTES A {self.bcn.code} ---\n")
 
+        #bucle per escriure linia a linia l'estat de cada porta
         i = 0
         while i < len(ocupacio):
             porta_info = ocupacio[i]
@@ -356,11 +373,13 @@ class InterficieAeroports:
             estat = porta_info[1]
             vol_id = porta_info[2]
 
+            #mirem el boolea per saber si esta ocupada o lliure
             if estat == True:
                 linia = f"Porta {nom_porta} : OCUPADA per vol [{vol_id}]\n"
             else:
                 linia = f"Porta {nom_porta} : Lliure\n"
 
+            #ho fiquem a la caixa de text de la pantalla
             self.text_ocupacio.insert(tk.END, linia)
             i = i + 1
 

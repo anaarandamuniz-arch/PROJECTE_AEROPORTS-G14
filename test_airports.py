@@ -1,4 +1,5 @@
 from airport import LoadAirports, SaveSchengenAirports, AddAirport, RemoveAirport, SetSchengen, PrintAirport, Airport
+
 def provar_load(nom_fitxer):
     aeroports = LoadAirports(nom_fitxer)
     print("S'han carregat", len(aeroports), "aeroports de", nom_fitxer)
@@ -41,5 +42,4 @@ if __name__ == "__main__":
         print("Fitxer SchengenAirports.txt creat")
     else:
         print("No s'ha creat fitxer Schengen (llista buida o sense Schengen)")
-
 
