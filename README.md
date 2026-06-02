@@ -2,6 +2,7 @@ Hola, som el grup 14 i a continuació us presentem el nostre projecte, el qual c
 
 A continuació trobareu els links dels videos explicatius de les diferents versions del nostre projecte:
 
+
 versió 1: https://youtu.be/zFWukR13oTQ
 
 versió 2: https://youtu.be/vQ7B-XhpDmg
