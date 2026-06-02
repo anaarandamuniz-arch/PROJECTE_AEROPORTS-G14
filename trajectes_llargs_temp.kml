@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="schLine"><LineStyle><color>ff00ff00</color><width>2</width></LineStyle></Style>
+<Style id="nonschLine"><LineStyle><color>ff0000ff</color><width>2</width></LineStyle></Style>
+<Placemark>
+<name>ECMKN (LGSR-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+25.479166666666664,36.399166666666666,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N761AJ (KJFK-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-73.77833333333334,40.640277777777776,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMAI (BIKF-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+-22.605555555555558,63.985,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECLZZ (URKK-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+39.169999999999995,45.03472222222222,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>VQBTN (UUEE-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+37.41305555555555,55.972500000000004,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>OHLZD (EFHK-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+24.96333333333333,60.31722222222223,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N823NW (KATL-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-84.43333333333334,33.63333333333333,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMEA (ULLI-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+30.2625,59.80027777777777,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECLZN (LGMK-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+25.34722222222222,37.43722222222222,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMGE (UUDD-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+37.906388888888884,55.40861111111111,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMEQ (OLBA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+35.49,33.81916666666667,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N76054 (KEWR-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-74.16833333333334,40.696666666666665,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>9VSWD (SBGR-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-46.47,-23.433333333333334,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TCJNZ (LTBA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+28.81416666666667,40.976111111111116,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>CGHLQ (CYUL-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-73.74138888888889,45.46805555555556,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMBK (UWKD-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+49.280277777777776,55.606944444444444,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECLUT (LLBG-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+34.885555555555555,32.00944444444445,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N790AN (KMIA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-80.28333333333333,25.8,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMMU (GCLP-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-15.386666666666667,27.931944444444447,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>LNRNO (ENGM-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+11.08388888888889,60.20277777777778,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N290AY (KPHL-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-75.245,39.87,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>VQBHK (UUEE-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+37.41305555555555,55.972500000000004,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMMH (GCXO-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-16.341666666666665,28.482777777777777,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>VPBWG (ULLI-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+30.2625,59.80027777777777,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>LNNGP (ENGM-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+11.08388888888889,60.20277777777778,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N900JG (LLBG-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+34.885555555555555,32.00944444444445,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>CFIYE (CYYZ-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-79.63055555555555,43.67722222222222,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECLQK (LLBG-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+34.885555555555555,32.00944444444445,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N803NW (KJFK-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-73.77833333333334,40.640277777777776,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N283AY (KCLT-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-80.95,35.21666666666667,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>CFDAT (CYUL-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-73.74138888888889,45.46805555555556,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>CGTSW (CYYZ-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-79.63055555555555,43.67722222222222,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N76062 (KIAD-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-77.45666666666666,38.94499999999999,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>URPSS (UKBB-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+30.893333333333334,50.344722222222224,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>4XELD (LLBG-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+34.885555555555555,32.00944444444445,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TCJVM (LTFJ-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+29.309166666666666,40.89833333333333,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>URPSO (UKBB-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+30.893333333333334,50.344722222222224,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>A7AEC (OTHH-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+51.608333333333334,25.274444444444445,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>A6EOP (OMDB-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+55.36,25.249166666666667,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TCJHZ (LTBA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+28.81416666666667,40.976111111111116,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIDHT (EYVI-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+25.28777777777778,54.636944444444445,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TCCPG (LTFJ-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+29.309166666666666,40.89833333333333,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>SUGCE (HECA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+31.413888888888888,30.11138888888889,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N969AV (SKBO-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-74.15,4.7,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIFJL (ENBR-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+5.218055555555556,60.29361111111111,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIFJM (ESSA-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+17.91861111111111,59.651944444444446,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>OYRUP (GCXO-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-16.341666666666665,28.482777777777777,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>LVCSX (SAEZ-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-58.53583333333333,-34.82222222222222,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>VQBBG (UUEE-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+37.41305555555555,55.972500000000004,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>PTMSV (SBGR-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-46.47,-23.433333333333334,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIFJK (EFHK-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+24.96333333333333,60.31722222222223,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TCJIP (LTBA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+28.81416666666667,40.976111111111116,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TCDCF (LTFJ-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+29.309166666666666,40.89833333333333,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>VPBAS (UUDD-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+37.906388888888884,55.40861111111111,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECJFF (GCFV-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-13.863888888888889,28.452777777777776,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>LNRRG (ENGM-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+11.08388888888889,60.20277777777778,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMMH (GCXO-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-16.341666666666665,28.482777777777777,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIDHO (ESKN-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+16.90361111111111,58.78861111111111,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>HALWY (EVRA-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+23.97111111111111,56.92361111111111,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>LNDYP (ESSA-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+17.91861111111111,59.651944444444446,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMFB (ENGM-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+11.08388888888889,60.20277777777778,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMMU (GCLP-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-15.386666666666667,27.931944444444447,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECLUT (GCXO-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-16.341666666666665,28.482777777777777,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>A7ACD (OTHH-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+51.608333333333334,25.274444444444445,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>OHLZB (EFHK-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+24.96333333333333,60.31722222222223,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>A6EEH (OMDB-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+55.36,25.249166666666667,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>CSTRN (ESSA-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+17.91861111111111,59.651944444444446,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIDLH (GCLP-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-15.386666666666667,27.931944444444447,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>N900AL (HTDA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+39.20333333333333,-6.875555555555556,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ECMKT (EFHK-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+24.96333333333333,60.31722222222223,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIFHS (ENGM-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+11.08388888888889,60.20277777777778,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TFBRO (BIKF-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+-22.605555555555558,63.985,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>ERAXP (LUKK-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+28.930833333333336,46.92777777777778,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>TCJRF (LTBA-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+28.81416666666667,40.976111111111116,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>EIFJN (ENGM-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+11.08388888888889,60.20277777777778,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>VPBZA (UUEE-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+37.41305555555555,55.972500000000004,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>VPBRI (UUDD-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+37.906388888888884,55.40861111111111,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>OYRUP (GCLP-LEBL)</name>
+<styleUrl>#nonschLine</styleUrl>
+<LineString><coordinates>
+-15.386666666666667,27.931944444444447,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>YLPSH (BIKF-LEBL)</name>
+<styleUrl>#schLine</styleUrl>
+<LineString><coordinates>
+-22.605555555555558,63.985,0
+2.0832941,41.297445,0
+</coordinates></LineString>
+</Placemark>
+</Document>
+</kml>
