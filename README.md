@@ -4,8 +4,8 @@ A continuació trobareu els links dels videos explicatius de les diferents versi
 
 versió 1: 
 
-versió 2: 
+versió 2: https://youtu.be/vQ7B-XhpDmg
 
-versió 3: 
+versió 3: https://youtu.be/2y2dv3rDf9c
 
-versió 4: 
+versió 4: https://youtu.be/qRmb6BEVu84
