@@ -9,7 +9,7 @@ versió 2: https://youtu.be/vQ7B-XhpDmg
 
 versió 3: https://youtu.be/2y2dv3rDf9c
 
-versió 4: https://youtu.be/qRmb6BEVu84
+versió 4: https://youtu.be/HpVoVjT8ptg
 
 
 NOTA IMPORTANT: cal instal·lar-se "package tkintermapview" per a que no hi hagi cap problema a l'utilitzar el programa. 
